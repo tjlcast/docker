@@ -20,6 +20,8 @@ docker run -itd -p 11434:11434 `
 --health-start-period=3s `
 --health-retries=3 `
 --name=ollama-nomic ollama-nomic:latest
+docker save ollama-nomic:latest -o Docker_ollama-nomic_latest.tar.gz
+docker load -i Docker_ollama-nomic_latest.tar.gz
 ```
 
 
