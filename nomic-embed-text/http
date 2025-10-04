@@ -1,0 +1,10 @@
+# 检查模型列表
+curl http://localhost:11434/api/tags
+
+# 测试嵌入生成
+curl -X POST http://localhost:11434/api/embeddings \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "nomic-embed-text:latest",
+    "prompt": "测试文本"
+  }'
