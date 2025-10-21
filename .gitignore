@@ -1,1 +1,3 @@
 *.tar.gz
+gitea/*.tar.gz
+gitea/data
